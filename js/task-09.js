@@ -6,5 +6,5 @@ const handelSpunColor = document.querySelector(".color");
 const handelBodyColor = document.querySelector("body");
 handelBtnColor.addEventListener("click", () => {
   handelBodyColor.style.backgroundColor = getRandomHexColor();
-  handelSpunColor.textContent = getRandomHexColor();
+  handelSpunColor.textContent = handelBodyColor.style.backgroundColor;
 });
